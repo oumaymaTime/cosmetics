@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Skin Care</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/template/css")
+</head>
+<body>
+    <!-- /.preloader -->
+    <div id="preloader"></div>
+
+        <div class="block">
+        <header class="simple-header for-sticky white">
+            <div class="top-bar">
+                <div class="container">
+                    <ul class="contact-item">
+                        <li><i class="fa fa-envelope-o"></i>cosmetics@email.com</li>
+                        <li><i class="fa fa-mobile"></i>+216 71 526 845 / +216 73 652 598 </li>
+                    </ul>
+                    <div class="choose-language">
+                        <a href="#" title="">FR</a>
+                        <a href="#" title="">EN</a>
+                    </div>
+                </div>
+            </div><!-- Top bar -->
+            <div class="menu">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" title="">
+                            <i class="fa fa-get-pocket"></i>
+                            <span>Cosmetics</span>
+                            <strong>Product PROPERTIES</strong>
+                        </a>
+                    </div><!-- LOGO -->
+                    <div class="popup-client">
+                        <span><i class="fa fa-user"></i> /  Signup</span>
+                    </div>
+                    <span class="menu-toggle"><i class="fa fa-bars"></i></span>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="">HOME</a></li>
+                            <li><a href="#" title="">PRODUCTS</a></li>
+                            <li><a href="#" title="">PROPERTIES</a></li>
+                            <li><a href="#" title="">BLOG</a></li>
+
+                            <li><a href="/Home/Contact" title="">CONTACT</a></li>
+                            <li><a href="/Home/About" asp-area="" asp-controller="Home" asp-action="About" title="">ABOUT</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+       
+
+        <footer class="light-footer">
+            @RenderBody()
+            <section class="top-line">
+                <div style="background: url("~/Content/img/footer.jpg") repeat scroll 50% 422.28px transparent;" class="parallax scrolly-invisible no-parallax whitish"></div><!-- PARALLAX BACKGROUND IMAGE -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-3 column">
+                            <div class="about_widget widget">
+                                <div class="heading1">
+                                    <h2><span>Useful</span> links</h2>
+                                </div><!-- heading -->
+
+                                <span><i class="fa fa-envelope"></i>cosmetics@gmail.com</span>
+                                <span><i class="fa fa-phone"></i>+216 (73 154 965)</span>
+                                <span><i class="fa fa-location-arrow"></i>12 Sousse-Tunisie, 4000</span>
+                                <ul class="social-btns">
+                                    <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-tumblr"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-3 column">
+                            <div class="subscribe_widget widget">
+                                <div class="heading1">
+                                    <h2><span>Subscribe</span> Us</h2>
+                                </div><!-- heading -->
+                                <p>Positioning the closest positioned for abs positioning</p>
+                                <form>
+                                    <label><input type="text" placeholder="TYPE YOUR EMAIL" /></label>
+                                    <button type="submit" class="flat-btn"><i class="ti ti-email"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <a href="#" class="scrollToTop"><i class="ti ti-arrow-circle-up"></i></a>
+        </footer>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!-- Script -->
+
+    @Scripts.Render("~/template/js")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            "use strict";
+            jQuery('.tp-banner').show().revolution({
+                dottedOverlay: "none",
+                delay: 16000,
+                startwidth: 1170,
+                startheight: 700,
+                hideThumbs: 200,
+                thumbWidth: 100,
+                thumbHeight: 50,
+                thumbAmount: 5,
+                navigationType: "bullet",
+                navigationArrows: "solo",
+                navigationStyle: "preview1",
+                touchenabled: "on",
+                onHoverStop: "on",
+                swipe_velocity: 0.7,
+                swipe_min_touches: 1,
+                swipe_max_touches: 1,
+                drag_block_vertical: false,
+                parallax: "mouse",
+                parallaxBgFreeze: "on",
+                parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+                keyboardNavigation: "off",
+                navigationHAlign: "center",
+                navigationVAlign: "bottom",
+                navigationHOffset: 0,
+                navigationVOffset: 20,
+                soloArrowLeftHalign: "left",
+                soloArrowLeftValign: "center",
+                soloArrowLeftHOffset: 20,
+                soloArrowLeftVOffset: 0,
+                soloArrowRightHalign: "right",
+                soloArrowRightValign: "center",
+                soloArrowRightHOffset: 20,
+                soloArrowRightVOffset: 0,
+                shadow: 0,
+                fullWidth: "on",
+                fullScreen: "off",
+                spinner: "spinner4",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                forceFullWidth: "off",
+                hideThumbsOnMobile: "off",
+                hideNavDelayOnMobile: 1500,
+                hideBulletsOnMobile: "off",
+                hideArrowsOnMobile: "off",
+                hideThumbsUnderResolution: 0,
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                startWithSlide: 0,
+                videoJsPath: "rs-plugin/videojs/",
+                fullScreenOffsetContainer: ""
+            });
+
+            $(".carousel-prop").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 2000,
+                loop: true,
+                dots: true,
+                nav: false,
+                items: 4,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+
+            $(".carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 2000,
+                loop: false,
+                dots: false,
+                nav: true,
+                margin: 0,
+                items: 3
+            });
+
+            $(".carousel-client").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 2000,
+                loop: false,
+                dots: false,
+                nav: true,
+                margin: 30,
+                items: 5,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿@model CosmeticsApp.Models.IngredientModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IngredientModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameIng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameIng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefIng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefIng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.paraben)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.paraben)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.safety_rules)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.safety_rules)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

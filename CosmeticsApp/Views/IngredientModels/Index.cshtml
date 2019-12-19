@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CosmeticsApp.Models.IngredientModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameIng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefIng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paraben)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.safety_rules)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameIng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefIng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paraben)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.safety_rules)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
