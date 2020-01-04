@@ -703,6 +703,7 @@
     <Content Include="Scripts\rs-plugin\font\revicons.woff" />
     <Content Include="Scripts\rs-plugin\images\.DS_Store" />
     <Content Include="Scripts\rs-plugin\js\.DS_Store" />
+    <Content Include="Views\Home\Profile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -29,6 +29,13 @@ namespace CosmeticsApp.Controllers
             return View();
         }
 
+        public ActionResult Profile()
+        {
+            ViewBag.Message = "Your profile products are here";
+
+            return View();
+        }
+
         public ActionResult Products()
         {
             ViewBag.Message = "your makeup prods are here";
