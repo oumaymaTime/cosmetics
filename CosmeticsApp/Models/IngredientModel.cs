@@ -7,7 +7,7 @@ namespace CosmeticsApp.Models
 {
     public class IngredientModel
     {
-        public int IngID { get; set; }
+        public int ID { get; set; }
 
         public string NameIng { get; set; }
 

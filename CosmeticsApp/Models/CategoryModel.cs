@@ -7,7 +7,7 @@ namespace CosmeticsApp.Models
 {
     public class CategoryModel
     {
-        public int CategID { get; set; }
+        public int ID { get; set; }
         public string synonyme { get; set; }
     }
 }

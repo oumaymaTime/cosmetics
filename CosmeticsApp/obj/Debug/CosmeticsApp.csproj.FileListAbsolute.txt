@@ -84,3 +84,7 @@ C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\EntityFramework.SqlSe
 C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\EntityFramework.xml
 C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\EntityFramework.SqlServer.xml
 C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\obj\Debug\CosmeticsApp.csprojAssemblyReference.cache
+C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\MySql.Data.dll
+C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\MySql.Data.Entity.EF6.dll
+C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\MySql.Data.xml
+C:\Users\LEGION\source\repos\CosmeticsApp\CosmeticsApp\bin\MySql.Data.Entity.EF6.xml
